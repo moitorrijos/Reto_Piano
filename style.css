@@ -1,0 +1,49 @@
+:root{
+    --main-bg: #998235;
+    --color-piano: #191919;
+    --color-teclas: #FFFFFF;
+}
+body {
+    background: var(--main-bg);
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.piano {
+    background: var(--color-piano);
+    width: 180px;
+    height: 100px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 25px 5px 5px 5px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    position: relative;
+}
+.tecla {
+    background: var(--color-teclas);
+    border-radius: 5px;
+}
+.negra {
+    width: 15px;
+    height: 35px;
+    position: absolute;
+    top: 25px;
+    background: var(--color-piano);
+}
+.piano .negra:nth-child(1) {
+    left: 20px;
+  }
+  .piano .negra:nth-child(2) {
+    left: 45px;
+  }
+  .piano .negra:nth-child(3) {
+    left: 95px;
+  }
+  .piano .negra:nth-child(4) {
+    left: 120px;
+  }
+  .piano .negra:nth-child(5) {
+    left: 145px;
+  }
